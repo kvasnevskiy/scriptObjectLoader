@@ -6,7 +6,6 @@ C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\obj\Debug\ScriptObjectLoade
 C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\obj\Debug\ScriptObjectLoader.g.resources
 C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\obj\Debug\ScriptObjectLoader.Properties.Resources.resources
 C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\obj\Debug\ScriptObjectLoader.csproj.GenerateResource.cache
-C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\obj\Debug\ScriptObjectLoader.csproj.CoreCompileInputs.cache
 C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\bin\Debug\ScriptObjectLoader.exe
 C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\bin\Debug\ScriptObjectLoader.pdb
 C:\Dev\Pet-Dev\ScriptObjectLoader\ScriptObjectLoader\bin\Debug\AssimpNet.dll
