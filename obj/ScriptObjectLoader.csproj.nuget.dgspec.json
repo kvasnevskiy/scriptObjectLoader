@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\ScriptObjectLoader.csproj": {}
+  },
+  "projects": {
+    "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\BasicObjectsLibrary\\BasicObjectsLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\BasicObjectsLibrary\\BasicObjectsLibrary.csproj",
+        "projectName": "BasicObjectsLibrary",
+        "projectPath": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\BasicObjectsLibrary\\BasicObjectsLibrary.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\ScriptObjectLoader.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\ScriptObjectLoader.csproj",
+        "projectName": "ScriptObjectLoader",
+        "projectPath": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\ScriptObjectLoader.csproj",
+        "packagesPath": "C:\\Users\\Vlad Kvasnevskyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Vlad Kvasnevskyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\BasicObjectsLibrary\\BasicObjectsLibrary.csproj": {
+                "projectPath": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\BasicObjectsLibrary\\BasicObjectsLibrary.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "HelixToolkit": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
+            "HelixToolkit.SharpDX.Assimp": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
+            "HelixToolkit.Wpf": {
+              "target": "Package",
+              "version": "[2.7.0, )"
+            },
+            "IronPython": {
+              "target": "Package",
+              "version": "[2.7.9, )"
+            },
+            "Prism.DryIoc": {
+              "target": "Package",
+              "version": "[7.1.0.431, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

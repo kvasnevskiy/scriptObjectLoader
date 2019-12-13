@@ -1,0 +1,1625 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libassimp.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libassimp.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/assimp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/assimp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "DryIoc.dll/3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DryIoc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DryIoc.dll": {}
+        }
+      },
+      "DynamicLanguageRuntime/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        }
+      },
+      "HelixToolkit/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.SharpDX.Assimp/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "AssimpNet": "4.1.0",
+          "HelixToolkit.Wpf.SharpDX": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "HelixToolkit": "[2.7.0]"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "dependencies": {
+          "DynamicLanguageRuntime": "[1.2.2]"
+        },
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.DryIoc/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "DryIoc.dll": "3.0.2",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "BasicObjectsLibrary/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        }
+      },
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "DryIoc.dll/3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DryIoc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DryIoc.dll": {}
+        }
+      },
+      "DynamicLanguageRuntime/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        }
+      },
+      "HelixToolkit/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.SharpDX.Assimp/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "AssimpNet": "4.1.0",
+          "HelixToolkit.Wpf.SharpDX": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "HelixToolkit": "[2.7.0]"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "dependencies": {
+          "DynamicLanguageRuntime": "[1.2.2]"
+        },
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.DryIoc/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "DryIoc.dll": "3.0.2",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "BasicObjectsLibrary/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/assimp.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        }
+      },
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "DryIoc.dll/3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DryIoc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DryIoc.dll": {}
+        }
+      },
+      "DynamicLanguageRuntime/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        }
+      },
+      "HelixToolkit/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.SharpDX.Assimp/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "AssimpNet": "4.1.0",
+          "HelixToolkit.Wpf.SharpDX": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "HelixToolkit": "[2.7.0]"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "dependencies": {
+          "DynamicLanguageRuntime": "[1.2.2]"
+        },
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.DryIoc/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "DryIoc.dll": "3.0.2",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "BasicObjectsLibrary/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "AssimpNet/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AssimpNet.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/assimp.dll": {}
+        },
+        "build": {
+          "build/AssimpNet.targets": {}
+        }
+      },
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net47/CommonServiceLocator.dll": {}
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/1.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        },
+        "runtime": {
+          "lib/net47/Cyotek.Drawing.BitmapFont.dll": {}
+        }
+      },
+      "DryIoc.dll/3.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/DryIoc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/DryIoc.dll": {}
+        }
+      },
+      "DynamicLanguageRuntime/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Dynamic.dll": {},
+          "lib/net45/Microsoft.Scripting.Metadata.dll": {},
+          "lib/net45/Microsoft.Scripting.dll": {}
+        }
+      },
+      "HelixToolkit/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/HelixToolkit.dll": {}
+        }
+      },
+      "HelixToolkit.SharpDX.Assimp/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "AssimpNet": "4.1.0",
+          "HelixToolkit.Wpf.SharpDX": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "HelixToolkit": "[2.7.0]"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.dll": {}
+        }
+      },
+      "HelixToolkit.Wpf.SharpDX/2.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Cyotek.Drawing.BitmapFont": "1.3.4",
+          "HelixToolkit": "[2.7.0]",
+          "SharpDX": "4.2.0",
+          "SharpDX.D3DCompiler": "4.2.0",
+          "SharpDX.DXGI": "4.2.0",
+          "SharpDX.Direct2D1": "4.2.0",
+          "SharpDX.Direct3D11": "4.2.0",
+          "SharpDX.Direct3D9": "4.2.0",
+          "SharpDX.Mathematics": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/HelixToolkit.Wpf.SharpDX.dll": {}
+        }
+      },
+      "IronPython/2.7.9": {
+        "type": "package",
+        "dependencies": {
+          "DynamicLanguageRuntime": "[1.2.2]"
+        },
+        "compile": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        },
+        "runtime": {
+          "lib/net45/IronPython.Modules.dll": {},
+          "lib/net45/IronPython.SQLite.dll": {},
+          "lib/net45/IronPython.Wpf.dll": {},
+          "lib/net45/IronPython.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.DryIoc/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "DryIoc.dll": "3.0.2",
+          "Prism.Wpf": "7.1.0.431"
+        },
+        "compile": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.DryIoc.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "SharpDX/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/SharpDX.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.dll": {}
+        }
+      },
+      "SharpDX.D3DCompiler/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.D3DCompiler.dll": {}
+        }
+      },
+      "SharpDX.Direct2D1/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct2D1.dll": {}
+        }
+      },
+      "SharpDX.Direct3D11/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0",
+          "SharpDX.DXGI": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D11.dll": {}
+        }
+      },
+      "SharpDX.Direct3D9/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Direct3D9.dll": {}
+        }
+      },
+      "SharpDX.DXGI/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.DXGI.dll": {}
+        }
+      },
+      "SharpDX.Mathematics/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "SharpDX": "4.2.0"
+        },
+        "compile": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SharpDX.Mathematics.dll": {}
+        }
+      },
+      "BasicObjectsLibrary/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BasicObjectsLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AssimpNet/4.1.0": {
+      "sha512": "z/4Tmf3Q2r1+vN6o/szArEZvPsdYNRYiS0L/yArybQd7n7KCiS9L4lRZhwwlHJb/edECM+Jky0XisVspr5aQWQ==",
+      "type": "package",
+      "path": "assimpnet/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AssimpNet Documentation (October 2018).chm",
+        "ChangeLog.txt",
+        "License.txt",
+        "assimpnet.4.1.0.nupkg.sha512",
+        "assimpnet.nuspec",
+        "build/AssimpNet.targets",
+        "lib/net35/AssimpNet.dll",
+        "lib/net35/AssimpNet.xml",
+        "lib/net40/AssimpNet.dll",
+        "lib/net40/AssimpNet.xml",
+        "lib/netstandard1.3/AssimpNet.dll",
+        "lib/netstandard1.3/AssimpNet.xml",
+        "runtimes/linux-x64/native/libassimp.so",
+        "runtimes/osx-x64/native/libassimp.dylib",
+        "runtimes/win-x64/native/assimp.dll",
+        "runtimes/win-x86/native/assimp.dll"
+      ]
+    },
+    "CommonServiceLocator/2.0.4": {
+      "sha512": "YpXfV5l6kv1iQRDfhQnN4RxocbnNehU/rAAS62IlaQUTAKN3WoUbtx9MHwE98Pb09mBemSs4xhVqFhXq27rjxw==",
+      "type": "package",
+      "path": "commonservicelocator/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.2.0.4.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/net40/CommonServiceLocator.dll",
+        "lib/net45/CommonServiceLocator.dll",
+        "lib/net46/CommonServiceLocator.dll",
+        "lib/net47/CommonServiceLocator.dll",
+        "lib/netcoreapp1.0/CommonServiceLocator.dll",
+        "lib/netcoreapp2.0/CommonServiceLocator.dll",
+        "lib/netstandard1.0/CommonServiceLocator.dll",
+        "lib/netstandard2.0/CommonServiceLocator.dll"
+      ]
+    },
+    "Cyotek.Drawing.BitmapFont/1.3.4": {
+      "sha512": "JnrPgniVoNAWZM1EYvPIkd/6i1XYqRgp7VB8Ogy72oY+TALeu5c2JVoRgSIbfbkibb8powli3UOduHPt8w12GA==",
+      "type": "package",
+      "path": "cyotek.drawing.bitmapfont/1.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cyotek.drawing.bitmapfont.1.3.4.nupkg.sha512",
+        "cyotek.drawing.bitmapfont.nuspec",
+        "lib/net20/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net20/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net35/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net35/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net40/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net40/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net45/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net45/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net46/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net46/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/net47/Cyotek.Drawing.BitmapFont.dll",
+        "lib/net47/Cyotek.Drawing.BitmapFont.pdb",
+        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.dll",
+        "lib/netstandard1.3/Cyotek.Drawing.BitmapFont.pdb"
+      ]
+    },
+    "DryIoc.dll/3.0.2": {
+      "sha512": "JEAIt/4SmRTWXqcLJUyX31NyjNZTeveb35B/N7Qo2HRBn5ixQm3hzN9TXQu/vTSUv0MwnOiQaXjlwyqTBN7CZQ==",
+      "type": "package",
+      "path": "dryioc.dll/3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "DryIoc.snk",
+        "LICENSE.txt",
+        "README.md",
+        "dryioc.dll.3.0.2.nupkg.sha512",
+        "dryioc.dll.nuspec",
+        "lib/net35/DryIoc.XML",
+        "lib/net35/DryIoc.dll",
+        "lib/net40/DryIoc.XML",
+        "lib/net40/DryIoc.dll",
+        "lib/net45/DryIoc.XML",
+        "lib/net45/DryIoc.dll",
+        "lib/netstandard1.0/DryIoc.XML",
+        "lib/netstandard1.0/DryIoc.dll",
+        "lib/netstandard1.3/DryIoc.XML",
+        "lib/netstandard1.3/DryIoc.dll",
+        "lib/netstandard2.0/DryIoc.XML",
+        "lib/netstandard2.0/DryIoc.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/DryIoc.XML",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/DryIoc.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/DryIoc.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/DryIoc.dll",
+        "lib/xamarinmac20/DryIoc.XML",
+        "lib/xamarinmac20/DryIoc.dll"
+      ]
+    },
+    "DynamicLanguageRuntime/1.2.2": {
+      "sha512": "xNsMK0WWX85K5CNIIdjiHa3Va6hIZA5/GRBoMYG7KJ+iU6pCFFJMmq/EL0QjHmzWO14PQqviIZ0JQHCArv4gjQ==",
+      "type": "package",
+      "path": "dynamiclanguageruntime/1.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "dynamiclanguageruntime.1.2.2.nupkg.sha512",
+        "dynamiclanguageruntime.nuspec",
+        "lib/net45/Microsoft.Dynamic.dll",
+        "lib/net45/Microsoft.Dynamic.xml",
+        "lib/net45/Microsoft.Scripting.Metadata.dll",
+        "lib/net45/Microsoft.Scripting.Metadata.xml",
+        "lib/net45/Microsoft.Scripting.dll",
+        "lib/net45/Microsoft.Scripting.xml",
+        "lib/netcoreapp2.0/Microsoft.Dynamic.dll",
+        "lib/netcoreapp2.0/Microsoft.Dynamic.xml",
+        "lib/netcoreapp2.0/Microsoft.Scripting.Metadata.dll",
+        "lib/netcoreapp2.0/Microsoft.Scripting.Metadata.xml",
+        "lib/netcoreapp2.0/Microsoft.Scripting.dll",
+        "lib/netcoreapp2.0/Microsoft.Scripting.xml",
+        "lib/netcoreapp2.1/Microsoft.Dynamic.dll",
+        "lib/netcoreapp2.1/Microsoft.Dynamic.xml",
+        "lib/netcoreapp2.1/Microsoft.Scripting.Metadata.dll",
+        "lib/netcoreapp2.1/Microsoft.Scripting.Metadata.xml",
+        "lib/netcoreapp2.1/Microsoft.Scripting.dll",
+        "lib/netcoreapp2.1/Microsoft.Scripting.xml"
+      ]
+    },
+    "HelixToolkit/2.7.0": {
+      "sha512": "2QE55Y217bjCFq6WGEK5NRUVmmSVExubVi0zv+rWZqNIEXjHYC4Q7HixHH6N9DYaPPrgOME+I/kd9UwVJiL/LQ==",
+      "type": "package",
+      "path": "helixtoolkit/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.2.7.0.nupkg.sha512",
+        "helixtoolkit.nuspec",
+        "lib/netstandard1.1/HelixToolkit.dll",
+        "lib/netstandard1.1/HelixToolkit.xml"
+      ]
+    },
+    "HelixToolkit.SharpDX.Assimp/2.7.0": {
+      "sha512": "7tT6A/2VNoUzeaepifyq2TYW/9Mo29l88a+7MjZZNvoMQ0LDX0vWxrDQQ12NI4NMCUltFPkhdDb9P8fn/O+4vA==",
+      "type": "package",
+      "path": "helixtoolkit.sharpdx.assimp/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.sharpdx.assimp.2.7.0.nupkg.sha512",
+        "helixtoolkit.sharpdx.assimp.nuspec",
+        "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.dll",
+        "lib/net45/HelixToolkit.Wpf.SharpDX.Assimp.xml",
+        "lib/netcoreapp2.1/HelixToolkit.SharpDX.Core.Assimp.deps.json",
+        "lib/netcoreapp2.1/HelixToolkit.SharpDX.Core.Assimp.dll",
+        "lib/netcoreapp2.1/HelixToolkit.SharpDX.Core.Assimp.xml",
+        "lib/netstandard1.3/HelixToolkit.SharpDX.Core.Assimp.deps.json",
+        "lib/netstandard1.3/HelixToolkit.SharpDX.Core.Assimp.dll",
+        "lib/netstandard1.3/HelixToolkit.SharpDX.Core.Assimp.xml",
+        "lib/uap10.0/HelixToolkit.UWP.Assimp.XML",
+        "lib/uap10.0/HelixToolkit.UWP.Assimp.dll",
+        "lib/uap10.0/HelixToolkit.UWP.Assimp.pri"
+      ]
+    },
+    "HelixToolkit.Wpf/2.7.0": {
+      "sha512": "yydJPQY/tnhuxnyQnAh7Wsy2Dh6/JaXuj7YS2T5Irr1aNq9Ayq7JEAWg1AuvtQ19hv3vOvuODmtpvFgWwGXsCg==",
+      "type": "package",
+      "path": "helixtoolkit.wpf/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.wpf.2.7.0.nupkg.sha512",
+        "helixtoolkit.wpf.nuspec",
+        "lib/net45/HelixToolkit.Wpf.XML",
+        "lib/net45/HelixToolkit.Wpf.dll"
+      ]
+    },
+    "HelixToolkit.Wpf.SharpDX/2.7.0": {
+      "sha512": "7aVEB58jvL2dlYAs5SRQE2meVgSgRqmQ7M3TgxwTlPl7doVg3+YE/alBeTtHGOt+//5AGVIFy/tzmgO/jvg0iA==",
+      "type": "package",
+      "path": "helixtoolkit.wpf.sharpdx/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "helixtoolkit.wpf.sharpdx.2.7.0.nupkg.sha512",
+        "helixtoolkit.wpf.sharpdx.nuspec",
+        "lib/net45/HelixToolkit.Wpf.SharpDX.XML",
+        "lib/net45/HelixToolkit.Wpf.SharpDX.dll"
+      ]
+    },
+    "IronPython/2.7.9": {
+      "sha512": "CXQT1XUPKapVZ1r4coR+lFlC1FEsI4sDJg/9iSug/fUnWuYZ8APAPFutPG09T2uwcsWk40s4ckqO27/dbsA6lw==",
+      "type": "package",
+      "path": "ironpython/2.7.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "ironpython.2.7.9.nupkg.sha512",
+        "ironpython.nuspec",
+        "lib/net45/IronPython.Modules.dll",
+        "lib/net45/IronPython.Modules.xml",
+        "lib/net45/IronPython.SQLite.dll",
+        "lib/net45/IronPython.SQLite.xml",
+        "lib/net45/IronPython.Wpf.dll",
+        "lib/net45/IronPython.Wpf.xml",
+        "lib/net45/IronPython.dll",
+        "lib/net45/IronPython.xml",
+        "lib/netcoreapp2.0/IronPython.Modules.dll",
+        "lib/netcoreapp2.0/IronPython.Modules.xml",
+        "lib/netcoreapp2.0/IronPython.SQLite.dll",
+        "lib/netcoreapp2.0/IronPython.SQLite.xml",
+        "lib/netcoreapp2.0/IronPython.dll",
+        "lib/netcoreapp2.0/IronPython.xml",
+        "lib/netcoreapp2.1/IronPython.Modules.dll",
+        "lib/netcoreapp2.1/IronPython.Modules.xml",
+        "lib/netcoreapp2.1/IronPython.SQLite.dll",
+        "lib/netcoreapp2.1/IronPython.SQLite.xml",
+        "lib/netcoreapp2.1/IronPython.dll",
+        "lib/netcoreapp2.1/IronPython.xml"
+      ]
+    },
+    "Prism.Core/7.1.0.431": {
+      "sha512": "l4sBztXr1d2aJ1Ub5OKcd8dkf18UV7k+DWRbi0uen8y0pqb0tH+OC1/B35ZvaxMNlCtl1VZYbeq6wypdcrt92A==",
+      "type": "package",
+      "path": "prism.core/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.pdb",
+        "lib/net45/Prism.xml",
+        "lib/netstandard1.0/Prism.dll",
+        "lib/netstandard1.0/Prism.pdb",
+        "lib/netstandard1.0/Prism.xml",
+        "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.pdb",
+        "lib/netstandard2.0/Prism.xml",
+        "lib/uap10.0.15063/Prism.dll",
+        "lib/uap10.0.15063/Prism.pdb",
+        "lib/uap10.0.15063/Prism.pri",
+        "lib/uap10.0.15063/Prism.xml",
+        "lib/uap10.0.16299/Prism.dll",
+        "lib/uap10.0.16299/Prism.pdb",
+        "lib/uap10.0.16299/Prism.pri",
+        "lib/uap10.0.16299/Prism.xml",
+        "prism.core.7.1.0.431.nupkg.sha512",
+        "prism.core.nuspec"
+      ]
+    },
+    "Prism.DryIoc/7.1.0.431": {
+      "sha512": "jvHO4qpWmzwxg7ocbznExE50qUqWsDQv3KTVfkUlqgBeM9pZfoq1y2n3YpK6dMeBlRqsq9SNosI6Cebwfx7NVg==",
+      "type": "package",
+      "path": "prism.dryioc/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.DryIoc.Wpf.dll",
+        "lib/net45/Prism.DryIoc.Wpf.pdb",
+        "lib/net45/Prism.DryIoc.Wpf.xml",
+        "prism.dryioc.7.1.0.431.nupkg.sha512",
+        "prism.dryioc.nuspec"
+      ]
+    },
+    "Prism.Wpf/7.1.0.431": {
+      "sha512": "vcSet3jJxN4Ypf4GLPHvIYz3xQJV1E1e+uTJrsw6FkZd0mrjc0vUTZciQ3PoMRzGr5pf3iktMtScmCQhBJZMIw==",
+      "type": "package",
+      "path": "prism.wpf/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Wpf.dll",
+        "lib/net45/Prism.Wpf.pdb",
+        "lib/net45/Prism.Wpf.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "prism.wpf.7.1.0.431.nupkg.sha512",
+        "prism.wpf.nuspec"
+      ]
+    },
+    "SharpDX/4.2.0": {
+      "sha512": "3pv0LFMvfK/dv1qISJnn8xBeeT6R/FRvr0EV4KI2DGsL84Qlv6P7isWqxGyU0LCwlSVCJN3jgHJ4Bl0KI2PJww==",
+      "type": "package",
+      "path": "sharpdx/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/.xml",
+        "lib/net40/SharpDX.dll",
+        "lib/net40/SharpDX.pdb",
+        "lib/net45/.xml",
+        "lib/net45/SharpDX.dll",
+        "lib/net45/SharpDX.pdb",
+        "lib/netstandard1.1/.xml",
+        "lib/netstandard1.1/SharpDX.dll",
+        "lib/netstandard1.1/SharpDX.pdb",
+        "lib/uap10.0/.xml",
+        "lib/uap10.0/SharpDX.dll",
+        "lib/uap10.0/SharpDX.pdb",
+        "lib/uap10.0/SharpDX.pri",
+        "sharpdx.4.2.0.nupkg.sha512",
+        "sharpdx.nuspec"
+      ]
+    },
+    "SharpDX.D3DCompiler/4.2.0": {
+      "sha512": "Rnsd6Ilp127xbXqhTit8WKFQUrXwWxqVGpglyWDNkIBCk0tWXNQEjrJpsl0KAObzyZaa33+EXAikLVt5fnd3GA==",
+      "type": "package",
+      "path": "sharpdx.d3dcompiler/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.D3DCompiler.dll",
+        "lib/net40/SharpDX.D3DCompiler.pdb",
+        "lib/net40/SharpDX.D3DCompiler.xml",
+        "lib/net45/SharpDX.D3DCompiler.dll",
+        "lib/net45/SharpDX.D3DCompiler.pdb",
+        "lib/net45/SharpDX.D3DCompiler.xml",
+        "lib/netstandard1.1/SharpDX.D3DCompiler.dll",
+        "lib/netstandard1.1/SharpDX.D3DCompiler.pdb",
+        "lib/netstandard1.1/SharpDX.D3DCompiler.xml",
+        "lib/uap10.0/SharpDX.D3DCompiler.dll",
+        "lib/uap10.0/SharpDX.D3DCompiler.pdb",
+        "lib/uap10.0/SharpDX.D3DCompiler.pri",
+        "lib/uap10.0/SharpDX.D3DCompiler.xml",
+        "sharpdx.d3dcompiler.4.2.0.nupkg.sha512",
+        "sharpdx.d3dcompiler.nuspec"
+      ]
+    },
+    "SharpDX.Direct2D1/4.2.0": {
+      "sha512": "Qs8LzDMaQf1u3KB8ArHu9pDv6itZ++QXs99a/bVAG+nKr0Hx5NG4mcN5vsfE0mVR2TkeHfeUm4PksRah6VUPtA==",
+      "type": "package",
+      "path": "sharpdx.direct2d1/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct2D1.dll",
+        "lib/net40/SharpDX.Direct2D1.pdb",
+        "lib/net40/SharpDX.Direct2D1.xml",
+        "lib/net45/SharpDX.Direct2D1.dll",
+        "lib/net45/SharpDX.Direct2D1.pdb",
+        "lib/net45/SharpDX.Direct2D1.xml",
+        "lib/netstandard1.1/SharpDX.Direct2D1.dll",
+        "lib/netstandard1.1/SharpDX.Direct2D1.pdb",
+        "lib/netstandard1.1/SharpDX.Direct2D1.xml",
+        "lib/uap10.0/SharpDX.Direct2D1.dll",
+        "lib/uap10.0/SharpDX.Direct2D1.pdb",
+        "lib/uap10.0/SharpDX.Direct2D1.pri",
+        "lib/uap10.0/SharpDX.Direct2D1.xml",
+        "sharpdx.direct2d1.4.2.0.nupkg.sha512",
+        "sharpdx.direct2d1.nuspec"
+      ]
+    },
+    "SharpDX.Direct3D11/4.2.0": {
+      "sha512": "oTm/iT5X/IIuJ8kNYP+DTC/MhBhqtRF5dbgPPFgLBdQv0BKzNTzXQQXd7SveBFjQg6hXEAJ2jGCAzNYvGFc9LA==",
+      "type": "package",
+      "path": "sharpdx.direct3d11/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct3D11.dll",
+        "lib/net40/SharpDX.Direct3D11.pdb",
+        "lib/net40/SharpDX.Direct3D11.xml",
+        "lib/net45/SharpDX.Direct3D11.dll",
+        "lib/net45/SharpDX.Direct3D11.pdb",
+        "lib/net45/SharpDX.Direct3D11.xml",
+        "lib/netstandard1.1/SharpDX.Direct3D11.dll",
+        "lib/netstandard1.1/SharpDX.Direct3D11.pdb",
+        "lib/netstandard1.1/SharpDX.Direct3D11.xml",
+        "lib/uap10.0/SharpDX.Direct3D11.dll",
+        "lib/uap10.0/SharpDX.Direct3D11.pdb",
+        "lib/uap10.0/SharpDX.Direct3D11.pri",
+        "lib/uap10.0/SharpDX.Direct3D11.xml",
+        "sharpdx.direct3d11.4.2.0.nupkg.sha512",
+        "sharpdx.direct3d11.nuspec"
+      ]
+    },
+    "SharpDX.Direct3D9/4.2.0": {
+      "sha512": "1KgqXvPj/j5hLYxfcOQoJdHskamu7EWg60n9LBAYhun7dR+sKS0ZDNb7NuKwFP1bM0HZqvokjXQIf3oA2NpdqA==",
+      "type": "package",
+      "path": "sharpdx.direct3d9/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Direct3D9.dll",
+        "lib/net40/SharpDX.Direct3D9.pdb",
+        "lib/net40/SharpDX.Direct3D9.xml",
+        "lib/net45/SharpDX.Direct3D9.dll",
+        "lib/net45/SharpDX.Direct3D9.pdb",
+        "lib/net45/SharpDX.Direct3D9.xml",
+        "lib/netstandard1.3/SharpDX.Direct3D9.dll",
+        "lib/netstandard1.3/SharpDX.Direct3D9.pdb",
+        "lib/netstandard1.3/SharpDX.Direct3D9.xml",
+        "sharpdx.direct3d9.4.2.0.nupkg.sha512",
+        "sharpdx.direct3d9.nuspec"
+      ]
+    },
+    "SharpDX.DXGI/4.2.0": {
+      "sha512": "UjKqkgWc8U+SP+j3LBzFP6OB6Ntapjih7Xo+g1rLcsGbIb5KwewBrBChaUu7sil8rWoeVU/k0EJd3SMN4VqNZw==",
+      "type": "package",
+      "path": "sharpdx.dxgi/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.DXGI.dll",
+        "lib/net40/SharpDX.DXGI.pdb",
+        "lib/net40/SharpDX.DXGI.xml",
+        "lib/net45/SharpDX.DXGI.dll",
+        "lib/net45/SharpDX.DXGI.pdb",
+        "lib/net45/SharpDX.DXGI.xml",
+        "lib/netstandard1.1/SharpDX.DXGI.dll",
+        "lib/netstandard1.1/SharpDX.DXGI.pdb",
+        "lib/netstandard1.1/SharpDX.DXGI.xml",
+        "lib/uap10.0/SharpDX.DXGI.dll",
+        "lib/uap10.0/SharpDX.DXGI.pdb",
+        "lib/uap10.0/SharpDX.DXGI.pri",
+        "lib/uap10.0/SharpDX.DXGI.xml",
+        "sharpdx.dxgi.4.2.0.nupkg.sha512",
+        "sharpdx.dxgi.nuspec"
+      ]
+    },
+    "SharpDX.Mathematics/4.2.0": {
+      "sha512": "R2pcKLgdsP9p5WyTjHmGOZ0ka0zASAZYc6P4L6rSvjYhf6klGYbent7MiVwbkwkt9dD44p5brjy5IwAnVONWGw==",
+      "type": "package",
+      "path": "sharpdx.mathematics/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpDX.Mathematics.dll",
+        "lib/net40/SharpDX.Mathematics.pdb",
+        "lib/net40/SharpDX.Mathematics.xml",
+        "lib/net45/SharpDX.Mathematics.dll",
+        "lib/net45/SharpDX.Mathematics.pdb",
+        "lib/net45/SharpDX.Mathematics.xml",
+        "lib/netstandard1.1/SharpDX.Mathematics.dll",
+        "lib/netstandard1.1/SharpDX.Mathematics.pdb",
+        "lib/netstandard1.1/SharpDX.Mathematics.xml",
+        "lib/uap10.0/SharpDX.Mathematics.dll",
+        "lib/uap10.0/SharpDX.Mathematics.pdb",
+        "lib/uap10.0/SharpDX.Mathematics.pri",
+        "lib/uap10.0/SharpDX.Mathematics.xml",
+        "sharpdx.mathematics.4.2.0.nupkg.sha512",
+        "sharpdx.mathematics.nuspec"
+      ]
+    },
+    "BasicObjectsLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BasicObjectsLibrary/BasicObjectsLibrary.csproj",
+      "msbuildProject": "../BasicObjectsLibrary/BasicObjectsLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "BasicObjectsLibrary >= 1.0.0",
+      "HelixToolkit >= 2.7.0",
+      "HelixToolkit.SharpDX.Assimp >= 2.7.0",
+      "HelixToolkit.Wpf >= 2.7.0",
+      "IronPython >= 2.7.9",
+      "Prism.DryIoc >= 7.1.0.431"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Vlad Kvasnevskyi\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\ScriptObjectLoader.csproj",
+      "projectName": "ScriptObjectLoader",
+      "projectPath": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\ScriptObjectLoader.csproj",
+      "packagesPath": "C:\\Users\\Vlad Kvasnevskyi\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\ScriptObjectLoader\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\Vlad Kvasnevskyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\BasicObjectsLibrary\\BasicObjectsLibrary.csproj": {
+              "projectPath": "C:\\Dev\\Pet-Dev\\ScriptObjectLoader\\BasicObjectsLibrary\\BasicObjectsLibrary.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "HelixToolkit": {
+            "target": "Package",
+            "version": "[2.7.0, )"
+          },
+          "HelixToolkit.SharpDX.Assimp": {
+            "target": "Package",
+            "version": "[2.7.0, )"
+          },
+          "HelixToolkit.Wpf": {
+            "target": "Package",
+            "version": "[2.7.0, )"
+          },
+          "IronPython": {
+            "target": "Package",
+            "version": "[2.7.9, )"
+          },
+          "Prism.DryIoc": {
+            "target": "Package",
+            "version": "[7.1.0.431, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
